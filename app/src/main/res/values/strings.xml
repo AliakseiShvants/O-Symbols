@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OSymbols</string>
+    <string name="isom2017">ISOM2017</string>
+    <string name="issom2019">ISSOM2019</string>
+    <string name="searchHint">Type symbol\'s number or part of title</string>
+    <string name="landforms">LANDFORMS</string>
+    <string name="iof_logo">iof_logo</string>
+    <string name="share">Share with friends</string>
+    <string name="share_title">Share</string>
+</resources>
