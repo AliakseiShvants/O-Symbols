@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/osymbols_bg"
+    android:background="@drawable/osymbols_bg"
     tools:context=".MainActivity">
 
     <include
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/isom2017"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -41,12 +41,13 @@
         android:text="@string/isom2017"
         android:textColor="@color/button_text"
         android:textSize="24sp"
+        android:onClick="onBtnClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iof_logo" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/issom2019"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -58,9 +59,10 @@
         android:text="@string/issom2019"
         android:textColor="@color/button_text"
         android:textSize="24sp"
+        android:onClick="onBtnClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/isom2017" />
 
 </android.support.constraint.ConstraintLayout>

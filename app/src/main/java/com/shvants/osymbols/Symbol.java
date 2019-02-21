@@ -1,3 +1,5 @@
+package com.shvants.osymbols;
+
 public class Symbol {
     private int number;
     private String title;
@@ -29,9 +31,6 @@ public class Symbol {
 
     @Override
     public String toString() {
-        return "Symbol{" +
-                "number=" + number +
-                ", title='" + title + '\'' +
-                '}';
+        return number + " " + title;
     }
 }
