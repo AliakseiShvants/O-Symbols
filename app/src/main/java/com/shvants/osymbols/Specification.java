@@ -1,20 +1,20 @@
 package com.shvants.osymbols;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Specification {
     private int specificationId;
     private String title;
-    private List<Category> categories;
+    private Category[] categories;
 
-    public Specification(int specificationId, String title, List<Category> categories) {
+    public Specification(int specificationId, String title) {
         this.specificationId = specificationId;
         this.title = title;
-        this.categories = categories;
     }
 
-    public void setCategories(List<Category> categories) {
+    public Category[] getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Category[] categories) {
         this.categories = categories;
     }
 
@@ -24,9 +24,5 @@ public class Specification {
 
     public String getTitle() {
         return title;
-    }
-
-    public List<Category> getCategories() {
-        return new ArrayList<>(categories);
     }
 }

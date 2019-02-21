@@ -1,6 +1,7 @@
 package com.shvants.osymbols;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -18,6 +19,8 @@ public class CategoryActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         ListView listView = findViewById(R.id.sections_list);
 
@@ -27,12 +30,7 @@ public class CategoryActivity extends AppCompatActivity {
         AdapterView.OnItemClickListener clickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Specification specification =
-//                        SpecificationStore.getSpecifications().get(specificationId);
-//                Category category = CategoryStore.getCategories().get((int) id);
-
                 Intent intent = new Intent(CategoryActivity.this, SymbolActivity.class);
-
                 intent.putExtra("specificationId", specificationId);
                 intent.putExtra("categoryId", position);
                 startActivity(intent);
