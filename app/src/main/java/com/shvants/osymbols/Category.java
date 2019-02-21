@@ -5,7 +5,7 @@ import java.util.List;
 public class Category {
     private int categoryId;
     private String title;
-    private List<Symbol> symbols;
+    private Symbol[] symbols;
 
     public Category(int categoryId, String title) {
         this.categoryId = categoryId;
@@ -20,11 +20,11 @@ public class Category {
         return title;
     }
 
-    public List<Symbol> getSymbols() {
+    public Symbol[] getSymbols() {
         return symbols;
     }
 
-    public void setSymbols(List<Symbol> symbols) {
+    public void setSymbols(Symbol[] symbols) {
         this.symbols = symbols;
     }
 }

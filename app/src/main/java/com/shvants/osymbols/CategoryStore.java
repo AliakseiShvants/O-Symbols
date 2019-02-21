@@ -1,30 +1,14 @@
 package com.shvants.osymbols;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CategoryStore {
-    private static List<Category> categories = new ArrayList<>();
+    private static Category[] categories = new Category[7];
     static {
         Category landforms = new Category(0, "Landforms");
-        List<Symbol> landformsSymbols = new ArrayList<>();
-
-        for (final Symbol symbol: SymbolStore.getSymbols()){
-            switch (symbol.getNumber()/100){
-                case 1:
-                    landformsSymbols.add(symbol);
-                    break;
-            }
-        }
-
-        landforms.setSymbols(landformsSymbols);
-
-        categories.add(landforms);
-
+        landforms.setSymbols(SymbolStore.getLandformSymbols());
+        categories[0] = landforms;
     }
 
-
-    public static List<Category> getCategories() {
+    public static Category[] getCategories() {
         return categories;
     }
 }

@@ -3,6 +3,7 @@
     <string name="iof_logo">iof_logo</string>
     <string name="isom2017">ISOM2017</string>
     <string name="issom2019">ISSOM2019</string>
+    <string name="category_label">Symbols Sections</string>
     <string-array name="sections_list">
         <item name="landforms">LANDFORMS</item>
         <item name="rock_and_boulders">ROCK AND BOULDERS</item>
@@ -12,7 +13,6 @@
         <item name="technical_symbols">TECHNICAL SYMBOLS</item>
         <item name="overprinting_symbols">OVERPRINTING SYMBOLS</item>
     </string-array>
-
     <string name="searchHint">Type symbol\'s number or part of title</string>
     <string name="share">Share with friends</string>
     <string name="share_title">Share</string>
